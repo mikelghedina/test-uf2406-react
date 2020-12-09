@@ -6,8 +6,8 @@ class Home extends Component{
         return(
             <div>
                 <h1>WELCOME TO THIS LIBRARY</h1>
-                <h2>USE THE NAVIGATION BAR TO GO TO THE LIST OF QUOTES</h2>
-                <h2>USE THE NAVIGATION BAR TO GO TO THE LIST OF BOOKS</h2>
+                <h3>USE THE NAVIGATION BAR TO GO TO THE LIST OF QUOTES</h3>
+                <h3>USE THE NAVIGATION BAR TO GO TO THE LIST OF BOOKS</h3>
             </div>
         )
     }
