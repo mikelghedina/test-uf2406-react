@@ -27,7 +27,7 @@ class Books extends Component{
                     <tbody>{this.props.book.map(b=>
                         <tr key={b.id}>
                             <td>{b.title}</td>
-                            <td><Button variant="danger" onClick={this.props.deleteBook.bind(this, b.id)}>Delete</Button>{' '}</td>
+                            <td><Button variant="danger" onClick={this.props.deleteBook.bind(this, b.id)}>Delete</Button></td>
                         </tr>)}
                     </tbody>
                     <tbody>

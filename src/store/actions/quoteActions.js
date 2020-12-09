@@ -35,7 +35,7 @@ export const addQuote=(quote)=>{
 export const deleteQuote=(id)=>{
     return(dispatch)=>{
         dispatch(deleteQuoteRequest())
-        axios.post('http://localhost:8080/api/quotes' + id)
+        axios.delete('http://localhost:8080/api/quotes' + id)
             .then(res=>{
                 console.log(res)
                 dispatch(fetchQuotes())

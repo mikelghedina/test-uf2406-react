@@ -34,7 +34,7 @@ export const addBook=(book)=>{
 export const deleteBook=(id)=>{
     return(dispatch)=>{
         dispatch(deleteBookRequest())
-        axios.post('http://localhost:8080/api/books' + id)
+        axios.delete('http://localhost:8080/api/books' + id)
             .then(res=>{
                 console.log(res)
                 dispatch(fetchBooks())
